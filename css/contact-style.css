@@ -1,0 +1,201 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Monaco", monospace;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+.contact-body{
+    background-color: #103e56;
+}
+
+.contact-body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-half{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 5vh 5vh 5vh;
+    /*align-items: center;*/
+    background-color: #45bcee;
+    gap: 1.5vw;
+}
+
+.pfp-holder{
+    width: 40vh;
+    height: 40vh;
+    box-shadow: 0.9vh 0.4vw #103e56;
+    border: 0.4vh solid #ffffff;
+    border-radius: 50%;
+    background-color: #103e56;
+}
+.pfp-holder img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.name-holder h1{
+    color: #103e56;
+    font-size: clamp(1rem, 2.5vw, 3.5rem);
+    box-shadow: 0 0.2vw white;
+}
+
+.place-holder h2{
+    color: #103e56;
+    font-size: clamp(1rem, 2vw, 3.5rem);
+}
+
+.time-holder{
+    background-color: #9ed9f6;
+    border: 0.4vh solid #103e56;
+    box-shadow: 0 0.4vw #103e56;
+    padding: 1vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.time-holder:hover {
+    transform: scale(1.05);
+}
+
+
+.left-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    background-color: #103e56;
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    gap: 2vh;
+}
+
+.left-footer a{
+    transition: all 0.2s ease-in-out;
+}
+
+.left-footer a:hover{
+    transform: scale(1.1);
+    text-shadow:5px 5px 10px black;
+}
+
+
+/*----------------------------right half-----------------------*/
+
+.right-half{
+    padding: 10vh 10vh 10vh 15vh;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:3fr 5vh 2fr;
+    grid-template-rows: 3fr 1fr 5vh 12vh;
+    grid-template-areas:
+    'mail . phone'
+    'mail . .'
+    '. . .'
+    'git git git';
+}
+
+.email-holder{
+    grid-area: mail;
+    box-shadow: 0.9vh 0.4vw  #d6a013;
+    border: 0.4vh solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 3vw 3vw 3vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #562810;
+}
+
+.mail-button{
+    justify-content: center;
+    text-align: center;
+    padding: 1vh;
+    width: 30vh;
+    height: 10vh;
+    box-shadow: 0 0.4vw white;
+    border: 0.4vh solid white;
+    display: flex;
+    align-items: center;
+}
+
+.email-holder h3{
+    box-shadow: 0 0.2vw white;
+    width: 100%;
+}
+
+.email-holder h2{
+    margin-bottom: 2vh;
+    background-color: #ef9007;
+    transition: all 0.2s ease-in-out;
+}
+
+.email-holder h2:hover{
+    transform: scale(1.05);
+    background-color: #c67803;
+}
+
+
+
+.phone-holder{
+    grid-area: phone;
+    box-shadow: 0.9vh 0.4vw  #562810;
+    border: 0.4vh solid #ffffff;
+    background-color: #d6a013;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 3vw 2vw 3vw;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+
+.phone-holder:hover {
+    transform: scale(1.05);
+}
+
+.phone-holder h3{
+    box-shadow: 0 0.2vw #562810;
+    width: 100%;
+}
+.phone-text{
+    color: #562810;
+    font-weight: bold;
+}
+
+.github-holder{
+    grid-area: git;
+    box-shadow: 0.9vh 0.4vw  #d6a013;
+    /*box-shadow: 0.9vh 0.4vw  #f6d317, 0.9vh 0.4vw 7vh 1vh #562810;*/
+    border: 0.4vh solid #ffffff;
+    background-color:  #ef9007;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    div{
+        border: 0.4vh solid #ffffff;
+        box-shadow: 0 0.4vw white;
+        padding: 1vh;
+        transition: all 0.2s ease-in-out;
+        background-color: #562810;
+    }
+
+    div:hover {
+        transform: scale(1.05);
+    }
+
+}

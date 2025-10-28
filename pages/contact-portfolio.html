@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        setInterval(myTimer, 1000);
+
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("currentTime").innerHTML = d.toLocaleTimeString('nl-NL', {timeZone: 'Europe/Amsterdam'});
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/contact-style.css">
+    <link rel="icon" type="image/x-icon" href="../images/faviconbig.png">
+    <title>Contact Page</title>
+</head>
+<body class="contact-body">
+
+    <!--------------LEFT HALF--------------------->
+
+    <div class="left-half">
+        <div class="pfp-holder">
+            <img src="../images/pfpforcontact.png"/>
+        </div>
+
+        <div class="name-holder">
+            <h1>Mx. Rin K.</h1>
+        </div>
+
+        <div class="place-holder">
+            <h2>Netherlands,<br/> Tilburg</h2>
+        </div>
+
+        <div class="time-holder">
+            <h4 style="color: #103e56;">Current time for me:</h4>
+            <h4 style="color: #103e56;" id="currentTime"></h4>
+        </div>
+
+        <div class="left-footer">
+            <h4>Links: </h4>
+            <a  href="../index.html">
+                <div>Land</div>
+            </a>
+            <a  href="about-portfolio.html">
+                <div>About</div>
+            </a>
+            <a  href="work-portfolio.html">
+                <div>Work</div>
+            </a>
+        </div>
+
+    </div>
+
+    <!--------------RIGHT HALF--------------------->
+
+    <div class="right-half">
+        <div class="email-holder">
+            <h3>Mail me at:</h3>
+            <h1>rin.k.softdev@gmail.com</h1>
+            <h4>or alternatively:</h4>
+            <a href="mailto:rin.k.softdev@gmail.com" target="_blank">
+                <h2 class="mail-button">click here to email me</h2>
+            </a>
+
+            <h4>I've created a new account just for this :]</h4>
+        </div>
+        <div class="phone-holder">
+            <h3 class="phone-text">You can also call me at:</h3>
+            <h1 class="phone-text">+31 6 13088495</h1>
+            <p class="phone-text">after 17.00 PM on workdays</p>
+            <p class="phone-text">or text me on this same number in WhatsApp or Telegram and I will try to reply ASAP</p>
+
+        </div>
+        <div class="github-holder">
+            <h3>Check out my github account here:</h3>
+            <a href="https://github.com/rinsoftdev">
+                <div>
+                    <h3>github.com/rinsoftdev</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

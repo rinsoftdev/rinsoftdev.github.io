@@ -1,0 +1,102 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    color: white;
+    list-style-type: none;
+    font-family: "Monaco", monospace;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+.land-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #562810;
+    overflow: hidden;
+}
+
+.land-top{
+    background-color: #F79712;
+}
+
+.land-bg-img{
+    background-repeat: no-repeat;
+    background-image: url("../images/bgsun.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+}
+
+.land-top-half{
+    margin: 5% 20% 0 20%;
+    width: 60%;
+    background-color: rgba(86, 40, 16, 0.8);
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    'title title title pfp'
+    'sub sub sub pfp'
+}
+#land-title{
+    grid-area: title;
+    align-self: start;
+    font-size: 4rem;
+    margin: 1% 0 0 3%;
+
+}
+#land-subtitle{
+    grid-area: sub;
+    align-self: end;
+    margin: 1% 0 2% 3%;
+}
+#land-pfp-holder{
+    grid-area: pfp;
+    justify-self: end;
+    align-self: end;
+
+}
+#land-pfp-holder img{
+    width: 40vh;
+    transform: scale(1.03); /*this makes it look how i want :3 */
+}
+
+/*bottom half*/
+.land-bottom{
+    height: 44vh;
+    background-image: linear-gradient(rgba(86, 40, 16, 1), rgba(247, 151, 18, 0.1));
+}
+
+.land-bottom-half{
+    margin: 2% 20% 0 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.land-button{
+    width: 19vw;
+    height: 23vh;
+    border: #ffffff 0.4vh solid;
+    box-shadow: 0.9vh 0.4vw #ffd48f;
+    text-decoration: none;
+    font-size: 4vw;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 0 0 0.5vh #ffd48f;
+}
+.land-button:hover{
+    transform: scale(1.03);
+    /*consider for each of the buttons show the theme image on hover (after other pages are done)*/
+}
+.land-button-gradient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(251, 177, 35, 0.5), rgba(55, 23, 8, 0.7));
+}

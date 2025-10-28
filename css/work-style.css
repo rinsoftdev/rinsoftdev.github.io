@@ -1,0 +1,92 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Monaco", monospace;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.work-body{
+    background-color: #63b0c3;
+    height: 100vh;
+}
+
+.work-move-holder {
+    margin-top: 30vh;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.work-move-holder::-webkit-scrollbar {
+    display: none;
+}
+
+.group{
+    display: flex;
+    animation: spin 6s infinite linear;
+    padding-right: 1em;
+}
+
+.project-card{
+    flex: 0 0 10em;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 53vh; /*this is also 16x9 ratio*/
+    height: 30vh;
+    margin-left: 5vh;
+}
+
+/*.project-card:hover{*/
+/*    transform: scale(1.1); !*this no work :(*!*/
+/*}*/
+
+@keyframes spin {
+    from {translate:0;}
+    to {translate:-100%;}
+}
+
+.work-image-holder{
+    width: 100%;
+}
+
+
+.prj1{
+    background-image: url("../images/portfoio_mockup_window_design.png");
+
+}
+.prj2{
+    background-image: url("../images/work-page-imgs/pong-web-for-work.png");
+}
+.prj3{
+    background-image: url("../images/work-page-imgs/ambition-responsive-web.png");
+} /*made them 16x9 ratio*/
+
+
+.work-project-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+.work-project-text h3{
+    padding: 0 0 0.5vh 2vh;
+}
+.work-project-text h4{
+    padding: 0 0 2vh 2vh;
+}
+
+.work-project-text:hover{
+    opacity: 1;
+}

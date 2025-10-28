@@ -1,0 +1,385 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    font-family: "Monaco", monospace;
+    font-weight: bold;
+    a:visited{
+        color: inherit;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.5vh;
+    height: 1vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  rgba(96, 62, 63, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 35, 36);
+}
+
+.goober-holder{
+    height: 19vw;
+    width:auto;
+    position: absolute;
+    right: 3vw;
+    bottom: 0;
+    z-index: 1;
+}
+
+.goober-holder img{
+    width: inherit;
+    height: inherit;
+}
+
+.project-body{
+    overflow: hidden;
+    background-color: #562810;
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh;
+    height: 100vh;
+    width: 99%;
+}
+.project-left-panel{
+    text-decoration: none;
+    color: #ffd48f;
+    justify-content: center;
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(5, 37, 1, 0.97);
+    border: 0.4vh solid white;
+    width: 20%;
+    height: 80%;
+    padding: 1%;
+    background-color: #F79712;
+    overflow-y: auto;
+    overflow-x: hidden;
+    h3{
+        text-decoration: underline;
+    }
+}
+
+.project-middle-panel{
+    color: #562810;
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(5, 37, 1, 0.97);
+    border: 0.4vh solid white;
+    width: 50%;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*text-align: center;*/
+    padding: 2vh;
+    background-color: #ffd48f;
+
+}
+
+.project-gallery{
+    border: 0.4vh solid white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 13vw;
+    background-color: black;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2vh;
+    /*justify-content: center;*/
+}
+
+.gallery-image-container{
+    height: inherit;
+}
+
+.gallery-image-container img{
+    width:inherit;
+    height:inherit;
+}
+
+/*right panel*/
+.project-right-panel{
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(5, 37, 1, 0.97);
+    border: 0.4vh solid white;
+    width: 15%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #F79712;
+    padding: 2vh;
+    h3{
+        text-decoration: underline;
+    }
+}
+
+
+.right-panel-sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.right-panel-indicators{
+    border: 0.4vh solid white;
+    width:6vw;
+    height: 5vh;
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-panel-indicators:hover{
+    transform: scale(1.05);
+}
+
+.git-link{
+    width: 10vw;
+}
+
+
+.left-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    background-image: linear-gradient(rgba(5, 37, 1, 0), rgba(5, 37, 1, 0.97));
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    gap: 2vh;
+    color: white;
+}
+
+.left-footer a{
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.left-footer a:hover{
+    transform: scale(1.1);
+    text-shadow:5px 5px 10px black;
+}
+
+
+/*--------------project cards style ---------------------- */
+
+.project-card{
+    background-color: #562810;
+    border: 0.4vh solid white;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+}
+
+
+
+.prj-image-container{
+    align-self: center;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.prj-image-container img{
+    width: 5vw;
+    height: 5vw;
+}
+
+.prj-text-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.prj-text-container h3{
+    margin-top: 2%;
+    text-decoration: underline;
+}
+
+.prj-text-container h4{
+    margin-top: 2%;
+}
+
+.current-prj{
+    box-shadow: 0 0 2vh 1vh rgba(255, 255, 255, 0.5)
+}
+
+/*--------------project cards style end---------------------- */
+
+
+/*---------------javascript website aka frog pond project----------------*/
+#jssite-body{
+    background-image: url("../images/work-page-imgs/lilypond.png");
+    background-size: cover;
+    background-color: rgba(96, 62, 63, 1);
+}
+
+#jssite-midpanel{
+    background-color: rgba(217, 183, 102, 1);
+    color: rgba(96, 62, 63, 1);
+    /*box-shadow: 0.9vh 0.4vw rgba(96, 62, 63, 1);*/
+    /*border: 0.4vh solid white;*/
+
+}
+
+#jssite-midpanel::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#jssite-leftpanel{
+    background-color: rgba(19, 49, 58, 1);
+    color: rgba(217, 183, 102, 1);
+    /*box-shadow: 0.9vh 0.4vw white;*/
+    /*border: 0.4vh solid white;*/
+}
+#jssite-rightpanel{
+    background-color: rgba(19, 49, 58, 1);
+    color: rgba(217, 183, 102, 1);
+    /*box-shadow: 0.9vh 0.4vw white;*/
+    /*border: 0.4vh solid white;*/
+}
+
+.jssite-card{
+    background-color: rgba(217, 183, 102, 1);
+    color: rgba(96, 62, 63, 1);
+}
+
+.jssite-indicators{
+    background-color: rgba(217, 183, 102, 1);
+    color: rgba(96, 62, 63, 1);
+}
+
+.prj-double-div{
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 13vw;
+    gap: 2vh;
+    justify-content: center;
+}
+
+.prj-double-div img{
+    border: rgb(255, 255, 255) 0.4vh solid;
+    height: 100%;
+}
+
+
+
+
+/*----------------------------------responsive website aka ambition----------------------------------*/
+
+.response-sidepanel{
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(96, 56, 108, 0.97);
+    background-color: #915FA4;
+    color: #ffffff;
+}
+
+#response-body{
+    background-color:  #CE5678;
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background:  #915FA4;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #60386c;
+    }
+}
+
+#response-midpanel{
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(96, 56, 108, 0.97);
+    background-color:  #FEB781;
+    color: black;
+}
+
+.response-card{
+    background-color:  #FEB781;
+    color: black;
+}
+
+.response-indicators{
+    background-color:  #FEB781;
+    color: black;
+}
+
+/*-------------------land project page---------------------------*/
+
+
+#land-body{
+    background-image: url("../images/work-page-imgs/man...jpg");
+    background-size: cover;
+}
+
+.land-sidepanel{
+    color:#562810;
+    background-color: #F79712;
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(86, 40, 16, 0.97);
+}
+
+.land-card{
+    background-color: #ffd48f;
+    color:#562810
+}
+.land-indicators{
+    background-color: #ffd48f;
+    color:#562810
+}
+
+.land-midpanel{
+    background-color:transparent;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.prj-land-double-div{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70%;
+    align-items: center;
+}
+
+.prj-land-double-div h3{
+    padding: 1vh;
+    border: rgb(255, 255, 255) 0.4vh solid;
+}
+
+.prj-land-double-div img{
+    height: 100%;
+}
