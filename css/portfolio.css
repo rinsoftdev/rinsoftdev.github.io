@@ -166,3 +166,27 @@ html, * {
     width: inherit;
     border-bottom: #7f85ff 5px solid;
 }
+
+/*----------------------------------part two------------------------*/
+
+.part-3{
+    height: 100vh;
+    width: inherit;
+    border-bottom: #AA00FF7F 5px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lingos-info{
+    width: 40vw;
+    height: 80%;
+    border: 0.4vh solid #ffffff;
+}
+
+.tools-info{
+    width: 35vw;
+    height: 80%;
+    border: 0.4vh solid #ffffff;
+}

@@ -51,10 +51,10 @@ html, * {
     overflow: hidden;
     background-color: #562810;
     display: flex;
-    justify-content: space-between;
-    margin: 5vh;
+    justify-content: space-around;
     height: 100vh;
-    width: 99%;
+    width: 100vw;
+    margin-top: 5vh;
 }
 .project-left-panel{
     text-decoration: none;
@@ -382,4 +382,75 @@ html, * {
 
 .prj-land-double-div img{
     height: 100%;
+}
+
+/*----------------------Apple prj--------------------*/
+
+
+#apple-body{
+    background-color: #93FFF7;
+    background-image: none;
+}
+
+#apple-midpanel{
+    background-color: #FFCDA7;
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(50,112,113,0.97);
+}
+
+.apple-sidepanel{
+    background-color: #FFC19D;
+    color: #70615C;
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(50,112,113,0.97);
+}
+
+.apple-card{
+    border: #70615C 0.4vh solid;
+    background-color: #FFFFEA;
+    color: #70615C;
+}
+
+.apple-indicators{
+    border: #70615C 0.4vh solid;
+    background-color: #FFFFEA;
+    color: #70615C;
+}
+
+
+/*--------------corntale------------------------*/
+
+#corn-body{
+    background-color: #600D4E;
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background:#2A6C89;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #60386c;
+    }
+}
+
+#corn-midpanel{
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(48, 28, 82, 0.97);
+    color:#40184B;
+    background-color: #FDAC61;
+
+}
+
+.corn-sidepanel{
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(48, 28, 82, 0.97);
+    color: #ffffff;
+        background-color: #95247C;
+}
+
+.corn-card{
+    color: #40184B;
+    background-color: #FDAC61;
 }
