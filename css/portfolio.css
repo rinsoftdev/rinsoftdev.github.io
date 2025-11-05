@@ -34,7 +34,7 @@ html, * {
 
 .about-body{
     background-color: #05092b;
-    height: 400vh; /*AT LEAST maybe more */
+    height: 300vh;
     width: 100vw;
 }
 .language-prof-table{
@@ -56,12 +56,13 @@ html, * {
     height: 80vh;
     width: 80vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) 2fr;
     grid-template-areas:
-    '. tools tools . art art .'
-    'lingos lingos . soul . other other'
-    '. time time . extra extra .'
+    '. tools .'
+    'lingos tools extra'
+    'lingos . extra'
+    '. soul .'
 
 }
 
@@ -119,7 +120,8 @@ html, * {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .lingos li{
@@ -130,18 +132,6 @@ html, * {
     margin-top: 0.55vh;
     margin-left: 4vh;
     font-size: 1vw;
-}
-
-.timelines-clicky{
-    grid-area: time;
-}
-
-.art-clicky{
-    grid-area: art;
-}
-
-.other-dev-clicky{
-    grid-area: other;
 }
 
 .extra-clicky{
@@ -159,17 +149,9 @@ html, * {
 
 
 
-/*----------------------------------part two------------------------*/
+/*----------------------------------part three------------------------*/
 
 .part-2{
-    height: 100vh;
-    width: inherit;
-    border-bottom: #7f85ff 5px solid;
-}
-
-/*----------------------------------part two------------------------*/
-
-.part-3{
     height: 100vh;
     width: inherit;
     border-bottom: #AA00FF7F 5px solid;
