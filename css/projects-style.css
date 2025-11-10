@@ -428,7 +428,7 @@ html, * {
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background:#CBA6D1;
+        background:#95247C;
     }
 
     /* Handle on hover */
@@ -457,24 +457,24 @@ html, * {
 
 /*--------------braverys view------------------------*/
 
-/*#brave-body{*/
-/*    background-color: #cc6115;*/
+#brave-body{
+    /*background-color: #cc6115;*/
+    background-color: #5e1a00;
+}
 
-/*}*/
+#brave-midpanel{
+    background-color:#ff9b54;
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(156, 91, 3, 0.97);
+    color: #751f00;
+}
 
-/*#brave-midpanel{*/
-/*    background-color: #ff9b54;*/
-/*    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(251, 170, 60, 0.97);*/
-/*    color: #751f00;*/
-/*}*/
+.brave-card{
+    background-color: #ff9b54;
+    color: #751f00;
+}
 
-/*.brave-card{*/
-/*    background-color: #9e2910;*/
-/*    color: #ff9b54;*/
-/*}*/
-
-/*.brave-sidepanel{*/
-/*    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(251, 170, 60, 0.97);*/
-/*    background-color: #751f00;*/
-/*    color: #ff9b54;*/
-/*}*/
+.brave-sidepanel{
+    box-shadow: 0.9vh 0.4vw white, 0.9vh 0.4vw 7vh 1vh rgba(156, 91, 3, 0.97);
+    background-color: #751f00;
+    color: #ff9b54;
+}
