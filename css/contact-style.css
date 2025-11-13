@@ -71,7 +71,7 @@ html, * {
 
 .left-footer{
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: inherit;
     background-color: #103e56;
