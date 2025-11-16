@@ -75,11 +75,12 @@ html, * {
     width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .land-button{
-    width: 19vw;
+    /*width: 19vw;*/
+    width: 45%;
     height: 23vh;
     border: #ffffff 0.4vh solid;
     box-shadow: 0.9vh 0.4vw #ffd48f;

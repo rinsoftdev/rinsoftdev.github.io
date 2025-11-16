@@ -73,7 +73,7 @@ html, * {
     position: absolute;
     top: 0;
     left: 0;
-    width: inherit;
+    width: 100%;
     background-color: #103e56;
     display: flex;
     flex-direction: row;
