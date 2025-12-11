@@ -8,16 +8,13 @@ html, * {
     }
 }
 
-
-.contact-body{
-    background-color: #103e56;
-}
-
 .contact-body{
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 100vw;
+    background-color: #103e56;
+    overflow: hidden;
 }
 
 .left-half{
@@ -70,7 +67,7 @@ html, * {
 
 
 .left-footer{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -198,4 +195,88 @@ html, * {
         transform: scale(1.05);
     }
 
+}
+
+
+
+@media (max-width: 1000px) {
+
+
+    .contact-body{
+        display: flex;
+        flex-direction: column;
+        /*height: 100vh;*/
+        /*width: 100vw;*/
+        /*background-color: #103e56;*/
+        overflow: auto;
+    }
+
+    .left-half{
+        padding: 5vh 0 5vh 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+
+        .time-holder{
+            width: 70%;
+        }
+
+        .pfp-holder{
+            width: 30vh;
+            height: 30vh;
+        }
+    }
+
+    .right-half{
+        /*gap: 10vh;*/
+        padding: 0;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+    'mail'
+    'phone'
+    'git';
+    }
+
+
+
+    .email-holder{
+        padding: 0;
+        width: 50%;
+        /*font-size: 1vh;*/
+        margin: 10% 0 0 10%;
+        text-align: left;
+
+        .mail-button{
+            width: 40%;
+        }
+
+        /*h3{*/
+        /*    width: 80%;*/
+        /*}*/
+
+        h1{
+            font-size: clamp(1rem, 2.5vw, 3.5rem);
+        }
+    }
+    .phone-holder{
+        padding: 0;
+        width: 50%;
+        margin: 10% 0 0 10%;
+    }
+    .github-holder{
+        padding: 0;
+        margin: 10% 0 0 10%;
+        width: 50%;
+        flex-direction: column;
+
+        div{
+            width: 50%;
+        }
+    }
 }

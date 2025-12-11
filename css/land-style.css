@@ -11,6 +11,7 @@ html, * {
 
 
 .land-body{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +20,8 @@ html, * {
 }
 
 .land-top{
+    margin: 0;
+    padding: 0;
     background-color: #F79712;
 }
 
@@ -100,4 +103,69 @@ html, * {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(rgba(251, 177, 35, 0.5), rgba(55, 23, 8, 0.7));
+}
+
+@media screen and (max-width: 1000px){
+
+    html, * {
+        width: 100vw;
+    }
+
+    .land-body{
+        overflow: auto;
+    }
+
+
+    .land-top{
+        height: 100vh;
+    }
+
+    .land-top-half{
+        margin: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas:
+        'title'
+        'pfp'
+        'sub'
+    }
+
+    #land-pfp-holder img{
+        width: 40vh;
+        padding: 5%;
+        align-self: center;
+        justify-self: center;
+        /*transform: scale(1.03); !*this makes it look how i want :3 *!*/
+    }
+
+    #land-title{
+        grid-area: title;
+        align-self: center;
+        justify-self: center;
+        /*font-size: 7rem;*/
+        /*margin: 1% 0 0 3%;*/
+
+    }
+    #land-subtitle {
+        grid-area: sub;
+        align-self: center;
+        justify-self: center;
+        /*font-size: 4rem;*/
+        padding: 1% 0 2% 3%;
+    }
+    /*.land-top{*/
+    /*    width: 100vw;*/
+    /*}*/
+
+    /*.land-top{*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.land-bg-img{*/
+    /*    background-image: none;*/
+    /*}*/
 }
