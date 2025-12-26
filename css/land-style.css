@@ -107,55 +107,54 @@ html, * {
 
 @media screen and (max-width: 1000px){
 
-    html, * {
-        width: 100vw;
-    }
+    /*html, * {*/
+    /*    width: 100vw;*/
+    /*}*/
 
     .land-body{
         overflow: auto;
     }
 
 
-    .land-top{
-        height: 100vh;
+    .land-bg-img{
+        background-image: none;
     }
 
     .land-top-half{
         margin: 0;
-        width: 100vw;
-        height: 100%;
+        padding: 10% 0 5% 10%;
+        width: 80%;
+        /*height: 80%;*/
         background-color: transparent;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
         'title'
         'pfp'
         'sub'
     }
 
-    #land-pfp-holder img{
-        width: 40vh;
-        padding: 5%;
-        align-self: center;
+    #land-pfp-holder{
         justify-self: center;
-        /*transform: scale(1.03); !*this makes it look how i want :3 *!*/
+        align-self: end;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #land-pfp-holder img{
+        width: inherit;
     }
 
     #land-title{
-        grid-area: title;
-        align-self: center;
         justify-self: center;
-        /*font-size: 7rem;*/
-        /*margin: 1% 0 0 3%;*/
+        font-size: 6rem;
+        margin: 1vh;
 
     }
     #land-subtitle {
-        grid-area: sub;
-        align-self: center;
-        justify-self: center;
-        /*font-size: 4rem;*/
-        padding: 1% 0 2% 3%;
+        font-size: 4rem;
     }
     /*.land-top{*/
     /*    width: 100vw;*/
@@ -168,4 +167,27 @@ html, * {
     /*.land-bg-img{*/
     /*    background-image: none;*/
     /*}*/
+
+
+    .land-bottom{
+        height: 60vh;
+    }
+
+    .land-bottom-half{
+        padding: 0 0 0 10%;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        flex-direction: column;
+        /*gap: 4vh;*/
+
+        .land-button{
+            width: 100%;
+            height: 30% ;
+
+            div{
+                font-size: 8rem;
+            }
+        }
+    }
 }
