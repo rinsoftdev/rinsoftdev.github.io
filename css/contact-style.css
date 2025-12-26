@@ -225,7 +225,7 @@ html, * {
         font-size: 3vh;
 
         .time-holder{
-            width: 70%;
+            width: 80%;
         }
 
         .pfp-holder{
@@ -246,7 +246,7 @@ html, * {
         /*gap: 10vh;*/
         padding: 0 0 10% 0;
         /*padding: 0;*/
-        width: 90%;
+        width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -263,6 +263,10 @@ html, * {
 
         text-align: left;
 
+
+        .mail-button{
+            height: 60%;
+        }
         h1{
             font-size: clamp(1rem, 2.5vh, 3.5rem);
         }
