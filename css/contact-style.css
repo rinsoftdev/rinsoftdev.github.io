@@ -260,29 +260,25 @@ html, * {
 
 
     .email-holder{
-        height: 30vh;
+
         text-align: left;
-        .a{
-            width: 80%;
-        }
 
         h1{
-            font-size: clamp(1rem, 2.5vw, 3.5rem);
+            font-size: clamp(1rem, 2.5vh, 3.5rem);
         }
     }
 
     .phone-holder{
-        height: 25vh;
-    }
-
-    .github-holder{
-        height: 10vh;
-        div{
-            width: auto;
+        h1{
+            font-size: clamp(1rem, 3.5vh, 3.5rem);
         }
     }
 
+    .github-holder{
+    }
+
     .grid-div{
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
