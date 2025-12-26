@@ -209,15 +209,20 @@ html, * {
         /*width: 100vw;*/
         /*background-color: #103e56;*/
         overflow: auto;
+
+        .left-footer{
+            position: fixed;
+            font-size: 3vh;
+        }
     }
 
     .left-half{
-        padding: 5vh 0 5vh 0;
-        width: 100%;
+        padding: 8vh 0 5vh 10%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
-        /*align-items: center;*/
+        font-size: 3vh;
 
         .time-holder{
             width: 70%;
@@ -227,12 +232,21 @@ html, * {
             width: 30vh;
             height: 30vh;
         }
+
+        h2{
+            font-size: 3vh;
+        }
+
+        h1{
+            font-size: 3vh;
+        }
     }
 
     .right-half{
         /*gap: 10vh;*/
-        padding: 0;
-        width: 100%;
+        padding: 0 0 10% 0;
+        /*padding: 0;*/
+        width: 90%;
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -246,37 +260,34 @@ html, * {
 
 
     .email-holder{
-        padding: 0;
-        width: 50%;
-        /*font-size: 1vh;*/
-        margin: 10% 0 0 10%;
+        height: 30vh;
         text-align: left;
-
-        .mail-button{
-            width: 40%;
+        .a{
+            width: 80%;
         }
-
-        /*h3{*/
-        /*    width: 80%;*/
-        /*}*/
 
         h1{
             font-size: clamp(1rem, 2.5vw, 3.5rem);
         }
     }
-    .phone-holder{
-        padding: 0;
-        width: 50%;
-        margin: 10% 0 0 10%;
-    }
-    .github-holder{
-        padding: 0;
-        margin: 10% 0 0 10%;
-        width: 50%;
-        flex-direction: column;
 
+    .phone-holder{
+        height: 25vh;
+    }
+
+    .github-holder{
+        height: 10vh;
         div{
-            width: 50%;
+            width: auto;
         }
+    }
+
+    .grid-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5%;
+        width: 70%;
+        margin: 10% 0 0 10%;
     }
 }
