@@ -481,3 +481,83 @@ html, * {
     background-color: #751f00;
     color: #ff9b54;
 }
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    html > *{
+        /*h1{*/
+        /*    !*display: none;*!*/
+        /*    font-size: clamp(1rem, 2.5vh, 3.5rem);*/
+        /*}*/
+        /*h3{*/
+        /*    font-size: clamp(1rem, 2vh, 3.5rem);*/
+        /*}*/
+        /*p{*/
+        /*    font-size: clamp(1rem, 1.7vh, 3.5rem);*/
+        /*}*/
+    }
+
+
+    .project-body {
+        overflow: auto;
+        height: auto;
+        flex-direction: column-reverse;
+        /*justify-content: center;*/
+        align-items: center;
+        gap:3vh;
+
+        .left-footer{
+            position: fixed;
+            font-size: 3vh;
+            h4{
+                font-size: 3vh;
+            }
+        }
+
+        h1{
+            /*display: none;*/
+            font-size: clamp(1rem, 2.5vh, 3.5rem);
+        }
+        h3{
+            font-size: clamp(1rem, 2vh, 3.5rem);
+        }
+        p, h4{
+            font-size: clamp(1rem, 1.7vh, 3.5rem);
+        }
+    }
+
+    .project-middle-panel{
+        width: 80%;
+        /*height: 80vh;*/
+        overflow-y: hidden;
+        height: 100%;
+
+
+        /*.project-middle-panel > *{*/
+        /*    margin-bottom: 3%;*/
+        /*}*/
+    }
+
+    .project-middle-panel > *{
+        margin-bottom: 5%;
+    }
+
+    .project-left-panel{
+        width: 60%;
+        height: 10%;
+    }
+
+    .project-right-panel{
+        width: 80%;
+        height: 10%;
+        flex-direction: row;
+    }
+
+    .prj-land-double-div img{
+        height: 0;
+    }
+}

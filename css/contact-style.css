@@ -302,6 +302,9 @@ html, * {
         h3{
             margin-bottom: 3%;
         }
+        div{
+            padding-top: 6%;
+        }
     }
 
     .grid-div{

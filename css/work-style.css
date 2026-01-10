@@ -90,3 +90,8 @@ html, * {
 .work-project-text:hover{
     opacity: 1;
 }
+
+
+@media (max-width: 1000px) {
+
+}
