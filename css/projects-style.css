@@ -88,6 +88,10 @@ html, * {
     padding: 2vh;
     background-color: #ffd48f;
 
+    .phone-text{
+        display: none;
+    }
+
 }
 
 .project-gallery{
@@ -210,8 +214,8 @@ html, * {
 }
 
 .prj-image-container img{
-    width: 5vw;
-    height: 5vw;
+    width: inherit;
+    height: inherit;
 }
 
 .prj-text-container{
@@ -520,13 +524,13 @@ html, * {
 
         h1{
             /*display: none;*/
-            font-size: clamp(1rem, 2.5vh, 3.5rem);
+            font-size: clamp(1rem,3.5vh, 3.5rem);
         }
         h3{
-            font-size: clamp(1rem, 2vh, 3.5rem);
+            font-size: clamp(1rem, 3vh, 3.5rem);
         }
         p, h4{
-            font-size: clamp(1rem, 1.7vh, 3.5rem);
+            font-size: clamp(1rem, 2.7vh, 3.5rem);
         }
     }
 
@@ -540,6 +544,13 @@ html, * {
         /*.project-middle-panel > *{*/
         /*    margin-bottom: 3%;*/
         /*}*/
+
+        .pc-text{
+            display: none;
+        }
+        .phone-text{
+            display: block;
+        }
     }
 
     .project-middle-panel > *{
@@ -547,17 +558,46 @@ html, * {
     }
 
     .project-left-panel{
-        width: 60%;
+        width: 80%;
         height: 10%;
+        margin-bottom: 5%;
     }
 
     .project-right-panel{
         width: 80%;
         height: 10%;
-        flex-direction: row;
+        /*flex-direction: row;*/
+        /*flex-wrap: wrap;*/
     }
 
     .prj-land-double-div img{
         height: 0;
+    }
+
+    /*.right-panel-sections{*/
+    /*    flex-wrap: nowrap;*/
+    /*}*/
+
+    .right-panel-indicators{
+        width: 10vh;
+        height: 10vh;
+        padding: 0 2vh 0 2vh;
+    }
+
+    .git-link{
+        width: 10vh;
+        font-size: 2.7vh;
+    }
+
+    .goober-holder {
+        height: 30vh;
+        right: 10vw;
+        top:35vh;
+    }
+
+    .prj-image-container {
+        align-self: center;
+        width: 10vh;
+        height: auto;
     }
 }
