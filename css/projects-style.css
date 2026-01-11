@@ -524,13 +524,13 @@ html, * {
 
         h1{
             /*display: none;*/
-            font-size: clamp(1rem,3.5vh, 3.5rem);
+            font-size: clamp(1rem, 2.5vh, 3.5rem);
         }
         h3{
-            font-size: clamp(1rem, 3vh, 3.5rem);
+            font-size: clamp(1rem, 2.5vh, 3.5rem);
         }
         p, h4{
-            font-size: clamp(1rem, 2.7vh, 3.5rem);
+            font-size: clamp(1rem, 2vh, 3.5rem);
         }
     }
 
@@ -579,20 +579,20 @@ html, * {
     /*}*/
 
     .right-panel-indicators{
-        width: 10vh;
-        height: 10vh;
+        width: 7vh;
+        height: 7vh;
         padding: 0 2vh 0 2vh;
     }
 
     .git-link{
         width: 10vh;
-        font-size: 2.7vh;
+        font-size: 2vh;
     }
 
     .goober-holder {
         height: 30vh;
-        right: 10vw;
-        top:35vh;
+        right: 5vw;
+        top:25vh;
     }
 
     .prj-image-container {
