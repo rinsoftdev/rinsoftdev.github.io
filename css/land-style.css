@@ -116,9 +116,9 @@ html, * {
     }
 
 
-    .land-bg-img{
-        background-image: none;
-    }
+    /*.land-bg-img{*/
+    /*    !*background-image: none;*!*/
+    /*}*/
 
     .land-top-half{
         margin: 0;
@@ -135,7 +135,12 @@ html, * {
         'sub'
     }
 
+    .land-top-half > *{
+        background-color: rgba(151, 82, 19, 0.8);
+    }
+
     #land-pfp-holder{
+        background-color: transparent;
         justify-self: center;
         align-self: end;
         width: 90%;
@@ -168,9 +173,13 @@ html, * {
     /*    background-image: none;*/
     /*}*/
 
+    .land-body{
+        background-color: #F79712;
+    }
 
     .land-bottom{
         height: 60vh;
+        /*background-image: none;*/
     }
 
     .land-bottom-half{
@@ -179,7 +188,10 @@ html, * {
         height: 100%;
         margin: 0;
         flex-direction: column;
+        gap: 1vh;
+        /*background-color: transparent;*/
         /*gap: 4vh;*/
+        /*background-color: ;*/
 
         .land-button{
             width: 100%;
