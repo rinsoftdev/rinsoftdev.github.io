@@ -1,6 +1,6 @@
 # My own Portfolio Website! 
 
-## WIth features like: 
+## With features like: 
 
 - 3 main pages + extra:
   - Land page
